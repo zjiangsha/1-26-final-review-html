@@ -1,0 +1,20 @@
+<html>
+    <img src="nothing" height="auto" width="400">
+    <h2>The dinosaur asks you a question:</h2>
+    <p>What is the first color of the rainbow?</p>
+    <p><input type="text" id="answer" value="type answer here"></p>
+    <p><button onclick="checkAnswer()">Check Answer</button></p>
+    
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value
+            if (answer==="red") {
+                alert("correct answer!")
+                window.location.href="/dinosaur2.html"
+            } else {
+                alert("WRONG! GO BACK TO SCHOOL!")
+                window.location.href="/dinosaureat.html"
+            }
+        }
+    </script>
+</html>
